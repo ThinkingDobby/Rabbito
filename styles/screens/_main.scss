@@ -1,32 +1,50 @@
-@mixin box() {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .main-box {
-    @include box();
+  @include box();
+  height: 100vh;
 
-    h1 {
-        color:$MainColor;
-        font-family: $EngMain;
-        font-size: 50px;
+  h1 {
+    color: $MainColor;
+    font-family: $EngMain;
+    font-size: 50px;
 
-        margin-bottom: 10px;
-    }
-    
-    h2 {
-        font-family: $EngSub;
-        color: $MainColor;
-    }
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: $EngSub;
+    color: $MainColor;
+  }
 }
 
 .sub-box {
+  @include box();
+  height: 100vh;
+  h2 {
+    @include title();
+
+    margin-bottom: 20px;
+  }
+
+  .outline {
+    margin-bottom: 100px;
+
+    p {
+      @include text();
+    }
+  }
+
+  .license {
     @include box();
 
-    h2 {
-        color: white;
+    h3 {
+      @include title();
+      font-size: 20px;
+
+      margin-bottom: 12px;
     }
+
+    p {
+      @include text();
+    }
+  }
 }

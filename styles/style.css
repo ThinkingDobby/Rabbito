@@ -143,11 +143,25 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* font-family */
 /* font-color */
+/* Componenets */
 /* Screens */
 .main-box {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +175,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100vh;
 }
 
 .main-box h1 {
@@ -176,7 +191,41 @@ a {
 }
 
 .sub-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
+}
+
+.sub-box h2 {
+  font-size: 40px;
+  color: #faf0dc;
+  font-family: "MaruBuri-Regular";
+  margin-bottom: 20px;
+}
+
+.sub-box .outline {
+  margin-bottom: 100px;
+}
+
+.sub-box .outline p {
+  line-height: 1.5;
+  font-size: 18px;
+  color: white;
+  font-family: "Pretendard-Regular";
+}
+
+.sub-box .license {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,8 +241,19 @@ a {
           flex-direction: column;
 }
 
-.sub-box h2 {
+.sub-box .license h3 {
+  font-size: 40px;
+  color: #faf0dc;
+  font-family: "MaruBuri-Regular";
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.sub-box .license p {
+  line-height: 1.5;
+  font-size: 18px;
   color: white;
+  font-family: "Pretendard-Regular";
 }
 
 body {
