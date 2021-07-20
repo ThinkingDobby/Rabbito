@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./font";
+
+/* Screens */
+@import "./screens/main";
+
+body {
+    height: 200vh;
+    background-color: #2c2d3b;
+}

@@ -1,0 +1,32 @@
+@mixin box() {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-box {
+    @include box();
+
+    h1 {
+        color:$MainColor;
+        font-family: $EngMain;
+        font-size: 50px;
+
+        margin-bottom: 10px;
+    }
+    
+    h2 {
+        font-family: $EngSub;
+        color: $MainColor;
+    }
+}
+
+.sub-box {
+    @include box();
+
+    h2 {
+        color: white;
+    }
+}
