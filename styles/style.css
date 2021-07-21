@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Rock+Salt&display=swap");
+@font-face {
+  font-family: "MaruBuri-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Rock+Salt&display=swap");
 html,
 body,
 div,
@@ -143,20 +157,6 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'MaruBuri-Regular';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* font-family */
 /* font-color */
 /* Componenets */
@@ -179,7 +179,7 @@ a {
 }
 
 .main-box h1 {
-  color: #F8F7EF;
+  color: #f8f7ef;
   font-family: "Rock Salt", cursive;
   font-size: 50px;
   margin-bottom: 10px;
@@ -187,7 +187,7 @@ a {
 
 .main-box h2 {
   font-family: "Righteous", cursive;
-  color: #F8F7EF;
+  color: #f8f7ef;
 }
 
 .btn-box {
