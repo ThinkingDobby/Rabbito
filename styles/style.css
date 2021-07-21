@@ -190,6 +190,21 @@ a {
   color: #F8F7EF;
 }
 
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -40px;
+}
+
+.btn-box img {
+  width: 50px;
+}
+
 .sub-box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -16,6 +16,17 @@
   }
 }
 
+.btn-box {
+  display: flex;
+  justify-content:center;
+  position: relative;
+  top: -40px;
+
+  img {
+    width: 50px;
+  }
+}
+
 .sub-box {
   @include box();
   height: 100vh;
