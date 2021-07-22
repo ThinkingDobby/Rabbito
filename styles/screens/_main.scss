@@ -17,13 +17,31 @@
 }
 
 .btn-box {
-  display: flex;
-  justify-content: center;
+  @include box();
   position: relative;
   top: -40px;
 
   img {
     width: 50px;
+  }
+
+  .arrow {
+    @include box();
+
+    .arrow1 {
+      animation: arrow-wave ease-in-out 1s infinite;
+      animation-direction: alternate;
+      animation-delay: 0.1s;
+    }
+    .arrow2 {
+      animation: arrow-wave ease-in-out 1s infinite;
+      animation-direction: alternate;
+      animation-delay: 0.3s;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".btnBottom").click(function () {
+  $(".arrow").click(function () {
     console.log("clicked");
     var height = $(document).height();
     $("html, body").animate(

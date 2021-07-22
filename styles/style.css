@@ -160,6 +160,42 @@ a {
 /* font-family */
 /* font-color */
 /* Componenets */
+/* Animations */
+@-webkit-keyframes arrow-wave {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-wave {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* Screens */
 .main-box {
   display: -webkit-box;
@@ -197,12 +233,57 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: -40px;
 }
 
 .btn-box img {
   width: 50px;
+}
+
+.btn-box .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn-box .arrow .arrow1 {
+  -webkit-animation: arrow-wave ease-in-out 1s infinite;
+          animation: arrow-wave ease-in-out 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.btn-box .arrow .arrow2 {
+  -webkit-animation: arrow-wave ease-in-out 1s infinite;
+          animation: arrow-wave ease-in-out 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.btn-box .arrow:hover {
+  cursor: pointer;
 }
 
 .sub-box {
