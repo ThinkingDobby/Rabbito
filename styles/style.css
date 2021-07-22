@@ -220,6 +220,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+  margin: 20px;
 }
 
 .sub-box h2 {
@@ -231,6 +232,7 @@ a {
 
 .sub-box .outline {
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .sub-box .outline p {
@@ -254,6 +256,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .sub-box .license h3 {
@@ -271,8 +275,39 @@ a {
   font-family: "Pretendard-Regular";
 }
 
+.sub-box .application {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.sub-box .application h3 {
+  font-size: 40px;
+  color: #faf0dc;
+  font-family: "MaruBuri-Regular";
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
 body {
   height: 200vh;
   background-color: #2c2d3b;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
