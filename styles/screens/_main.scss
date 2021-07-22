@@ -1,6 +1,7 @@
 .main-box {
   @include box();
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 
   h1 {
     color: $MainColor;
@@ -48,6 +49,7 @@
 .sub-box {
   @include box();
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   margin: 20px;
   h2 {
     @include title();
