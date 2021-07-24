@@ -382,6 +382,23 @@ a {
   margin-bottom: 12px;
 }
 
+.sub-box .application .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-box .application .icon-box img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px black);
+          filter: drop-shadow(2px 2px 2px black);
+}
+
 body {
   height: 200vh;
   height: calc(var(--vh, 1vh) * 200);
