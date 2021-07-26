@@ -324,12 +324,21 @@ a {
   color: #faf0dc;
   font-family: "MaruBuri-Regular";
   padding-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .sub-box .outline {
-  margin-bottom: 140px;
+  margin-bottom: 110px;
   text-align: center;
+}
+
+.sub-box .outline h3 {
+  font-size: 40px;
+  color: #faf0dc;
+  font-family: "MaruBuri-Regular";
+  font-size: 23px;
+  color: #f3ebdb;
+  margin-bottom: 50px;
 }
 
 .sub-box .outline p {
@@ -354,7 +363,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 85px;
 }
 
 .sub-box .license h3 {
