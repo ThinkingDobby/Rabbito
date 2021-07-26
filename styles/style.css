@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MaruBuri-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
@@ -158,6 +159,7 @@ a {
 
 /* font-family */
 /* font-color */
+/* background-color */
 /* Componenets */
 /* Animations */
 @-webkit-keyframes arrow-wave {
@@ -321,12 +323,12 @@ a {
   font-size: 40px;
   color: #faf0dc;
   font-family: "MaruBuri-Regular";
-  padding-top: 20px;
+  padding-top: 30px;
   margin-bottom: 20px;
 }
 
 .sub-box .outline {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   text-align: center;
 }
 
@@ -402,7 +404,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 10px;
 }
 
 .sub-box .application .icon-box img {
@@ -413,6 +414,19 @@ a {
           filter: drop-shadow(2px 2px 2px black);
 }
 
+/*  저작권 표기 부분
+.bottom-box {
+  @include box();
+  padding-bottom: 5px;
+
+  p {
+    color: white;
+    opacity: 0.7;
+    font-family: $KorSub;
+    font-size: 12px;
+  }
+}
+*/
 body {
   height: 200vh;
   height: calc(var(--vh, 1vh) * 200);
@@ -427,5 +441,20 @@ body::-webkit-scrollbar {
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::moz-selection {
+  color: #2c2d3b;
+  background-color: white;
+}
+
+::-moz-selection {
+  color: #2c2d3b;
+  background-color: white;
+}
+
+::selection {
+  color: #2c2d3b;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
