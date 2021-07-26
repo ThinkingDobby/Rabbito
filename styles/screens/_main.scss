@@ -54,26 +54,34 @@
 
 .sub-box {
   @include box();
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  margin: 20px;
+  height: 110vh;
+  height: calc(var(--vh, 1vh) * 110);
+  margin: 30px;
   h2 {
     @include title();
     padding-top: 30px;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .outline {
-    margin-bottom: 110px;
+    margin-bottom: 85px;
     text-align: center;
 
     h3 {
       @include title();
       font-size: 23px;
       color: rgb(245, 241, 233);
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
+
+    h4 {
+      @include title();
+      font-size: 20px;
+
+      margin-bottom: 12px;
+    }
+
     p {
       @include text();
     }
@@ -85,7 +93,7 @@
 
     margin-bottom: 85px;
 
-    h3 {
+    h4 {
       @include title();
       font-size: 20px;
 
@@ -101,7 +109,7 @@
     @include box();
     text-align: center;
 
-    h3 {
+    h4 {
       @include title();
       font-size: 20px;
 

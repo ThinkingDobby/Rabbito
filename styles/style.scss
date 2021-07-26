@@ -27,8 +27,8 @@
 @import "./screens/main";
 
 body {
-  height: 200vh;
-  height: calc(var(--vh, 1vh) * 200);
+  height: 210vh;
+  height: calc(var(--vh, 1vh) * 210);
   background-color: $MainBgColor;
 
   -ms-overflow-style: none;
