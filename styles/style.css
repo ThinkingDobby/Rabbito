@@ -228,9 +228,9 @@ a {
   color: #f8f7ef;
 }
 
-@media screen and (max-height: 250px) {
+@media screen and (max-height: 270px) {
   .main-box h2 {
-    display: none;
+    opacity: 0;
   }
 }
 
@@ -274,7 +274,7 @@ a {
 
 @media screen and (max-height: 550px) {
   .btn-box .arrow {
-    display: none;
+    opacity: 0;
   }
 }
 
@@ -323,8 +323,14 @@ a {
   font-size: 40px;
   color: #faf0dc;
   font-family: "MaruBuri-Regular";
-  padding-top: 30px;
+  padding-top: 70px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-height: 270px) {
+  .sub-box h2 {
+    opacity: 0;
+  }
 }
 
 .sub-box .outline {
@@ -404,6 +410,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .sub-box .application h4 {
