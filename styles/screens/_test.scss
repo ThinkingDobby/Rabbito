@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.test-box {
+  @include box();
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
+  h1 {
+    color: $MainTitleColor;
+    font-family: $EngMain;
+    font-size: 50px;
+
+    margin-bottom: 10px;
+  }
+}

@@ -134,16 +134,15 @@
   }
 }
 
-/*  저작권 표기 부분
 .bottom-box {
   @include box();
-  padding-bottom: 5px;
+  padding: 5px;
+  background-color: #272733;
 
-  p {
+  a {
     color: white;
     opacity: 0.7;
     font-family: $KorSub;
     font-size: 12px;
   }
 }
-*/

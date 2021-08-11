@@ -23,9 +23,6 @@
 /* Animations */
 @import "./animation/arrowAnimation";
 
-/* Screens */
-@import "./screens/main";
-
 body {
   height: 210vh;
   height: calc(var(--vh, 1vh) * 210);
@@ -52,3 +49,7 @@ body {
   color: $MainBgColor;
   background-color: white;
 }
+
+/* Screens */
+@import "./screens/main";
+@import "./screens/test";
