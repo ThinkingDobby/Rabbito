@@ -486,6 +486,12 @@ body::-webkit-scrollbar {
   background-color: #272733;
 }
 
+@media screen and (max-height: 600px) {
+  .bottom-box {
+    opacity: 0;
+  }
+}
+
 .bottom-box a {
   color: white;
   opacity: 0.7;
