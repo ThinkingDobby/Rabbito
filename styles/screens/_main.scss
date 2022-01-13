@@ -54,13 +54,10 @@
 
 .sub-box {
   @include box();
-  height: 110vh;
-  height: calc(var(--vh, 1vh) * 110);
   margin: 30px;
   h2 {
     @include title();
     padding-top: 70px;
-
     margin-bottom: 30px;
     @media screen and(max-height: 270px) {
       opacity: 0;
@@ -74,6 +71,7 @@
     h3 {
       @include title();
       font-size: 23px;
+      line-height: 150%;
       color: rgb(245, 241, 233);
       margin-bottom: 100px;
     }
@@ -121,13 +119,12 @@
     }
 
     .icon-box {
-      display: flex;
       justify-content: center;
 
       img {
         width: 60px;
         height: 60px;
-        margin: 10px;
+        margin: 6px;
         filter: drop-shadow(2px 2px 2px black);
       }
     }
